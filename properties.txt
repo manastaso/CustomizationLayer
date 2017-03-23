@@ -1,0 +1,7 @@
+#Repository Properties
+#Thu Dec 11 17:36:47 CET 2008
+repositoryURL=file\:///C\:/localRepository
+repositoryProxyURL=
+repositoryProxyPort=
+password=Q/FPsaqEzy8\=
+username=

@@ -1,0 +1,209 @@
+/* Customization Layer grammar */
+options {
+	STATIC = false ;
+}
+
+PARSER_BEGIN(CommandInterpreter)
+	package de.fhg.iese.cl.parser;
+	public class CommandInterpreter {
+	}
+PARSER_END(CommandInterpreter)
+
+SKIP : { " " }
+SKIP : { "\r" | "\r\n" }
+TOKEN: { 
+< HELP: "help" > | 
+< EXIT: "exit" > |
+< SHOWPROPERTIES: "show-properties" > |
+< SETPROPERTIES: "set-properties" >  |
+< ADDCOREASSET: "add-core-asset" > |
+< SHOWCOREASSETS: "show-core-assets" > |
+< SHOWINSTANCES: "show-instances" > |
+< INSTANTIATECOREASSET: "instantiate-core-asset" > |
+< SHOWINSTANCEDIFF: "show-instance-diff" > |
+< SHOWCOREDIFF: "show-core-diff" > |
+< REBASE: "rebase" > |
+< INTEGRATE: "integrate" > |
+< CLEAR: "clear" > |
+< MINUS_D : "-d" > |
+< NUMBER : (["0"-"9"])+ > |
+< PATH : ((~["\"", " ","\n","\r"])+ | ("\"")(~["\"","\n","\r"])+("\"")) >
+}
+
+CommandLine specification():
+{
+ CommandLine c=new CommandLine();
+}
+{
+c=exit()
+{ return c; } |
+c=clear()
+{ return c; } |
+c=help()
+{ return c; } | 
+c=setProperties() 
+{ return c; } |
+c=showProperties() 
+{ return c; } |
+c=addCoreAsset()
+{ return c; } |
+c=showCoreAssets()
+{ return c; } |
+c=showInstances()
+{ return c; } |
+c=showInstanceDiff()
+{ return c; } |
+c=showCoreDiff()
+{ return c; } |
+c=instantiateCoreAsset()
+{ return c; } |
+c=rebase()
+{ return c; } |
+c=integrate()
+{ return c; }
+}
+
+CommandLine exit() :
+{ CommandLine c=new CommandLine();
+}
+{
+c.command=<EXIT>
+{ return c; }
+<EOF>
+}
+
+CommandLine clear() :
+{ CommandLine c=new CommandLine();
+}
+{
+c.command=<CLEAR>
+{ return c; }
+<EOF>
+}
+
+CommandLine help() :
+{ CommandLine c=new CommandLine();
+}
+{
+c.command=<HELP>
+(c.arguments[0]=<SHOWPROPERTIES> | 
+c.arguments[0]=<SETPROPERTIES> | 
+c.arguments[0]=<ADDCOREASSET> | 
+c.arguments[0]=<SHOWCOREASSETS> | 
+c.arguments[0]=<SHOWINSTANCES> | 
+c.arguments[0]=<INSTANTIATECOREASSET> | 
+c.arguments[0]=<SHOWINSTANCEDIFF> | 
+c.arguments[0]=<SHOWCOREDIFF> | 
+c.arguments[0]=<REBASE> | 
+c.arguments[0]=<INTEGRATE> | 
+c.arguments[0]=<CLEAR> |
+c.arguments[0]=<HELP> |  
+c.arguments[0]=<EXIT>)?				
+<EOF>
+{return c; }
+}
+
+CommandLine showProperties() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<SHOWPROPERTIES>
+<EOF>
+{ return c; }
+}
+
+CommandLine setProperties() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<SETPROPERTIES>
+<EOF>
+{ return c; }
+}
+
+CommandLine addCoreAsset() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<ADDCOREASSET>
+c.arguments[0]=<PATH>
+(c.arguments[1]=<PATH>)?
+<EOF>
+{ return c; }
+}
+
+CommandLine showCoreAssets() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<SHOWCOREASSETS>
+(c.arguments[0]=<NUMBER>)?
+(c.arguments[1]=<PATH>)?
+(c.arguments[2]=<MINUS_D>)?
+<EOF>
+{ return c; }
+}
+
+CommandLine showInstances() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<SHOWINSTANCES>
+(c.arguments[0]=<PATH>)?
+(c.arguments[1]=<NUMBER>)?
+<EOF>
+{ return c; }
+}
+
+CommandLine instantiateCoreAsset() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<INSTANTIATECOREASSET>
+c.arguments[0]=<PATH>
+(c.arguments[1]=<NUMBER>)?
+(c.arguments[2]=<PATH>)?
+<EOF>
+{ return c; }
+}
+
+CommandLine showInstanceDiff() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<SHOWINSTANCEDIFF>
+(c.arguments[0]=<PATH>)
+(c.arguments[1]=<NUMBER>)?
+<EOF>
+{ return c; }
+}
+
+CommandLine integrate() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<INTEGRATE>
+(c.arguments[0]=<PATH>)
+<EOF>
+{ return c; }
+}
+
+CommandLine rebase() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<REBASE>
+(c.arguments[0]=<PATH>)
+<EOF>
+{ return c; }
+}
+
+CommandLine showCoreDiff() :
+{ CommandLine c=new CommandLine(); 
+}
+{
+c.command=<SHOWCOREDIFF>
+(c.arguments[0]=<PATH>)
+<EOF>
+{ return c; }
+}

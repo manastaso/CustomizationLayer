@@ -1,0 +1,147 @@
+08.10.2008 23:29:33 de.fhg.iese.cl.gui.Controller setupLogging
+INFO: Logger setup
+08.10.2008 23:29:36 de.fhg.iese.cl.gui.Controller log
+INFO: help [null,null,null,null]
+08.10.2008 23:29:36 de.fhg.iese.cl.gui.command.Command$1 run
+INFO: [help] General Commands
+	help - Show this help message
+Administrative Commands
+	set-properties- Set repository access properties
+	show-properties - Show the current repository access properties
+Variability Commands
+	add-core-asset - Add Core Asset
+	show-core-assets - Show Core Assets
+	show-instances - Show Instances of Core Asset
+	instantiate-core-asset - Instantiate Core Asset
+	show-instance-diff - Show changes in the Instances of a given Core Asset
+	show-core-diff - Show changes in the Core Asset of a given Instance
+	rebase - Mark last changes to instance as a rebase operation
+	integrate - Mark last changes to core asset as an integration operation
+08.10.2008 23:30:43 de.fhg.iese.cl.gui.Controller setupLogging
+INFO: Logger setup
+08.10.2008 23:30:47 de.fhg.iese.cl.gui.Controller log
+INFO: help [null,null,null,null]
+08.10.2008 23:30:47 de.fhg.iese.cl.gui.command.Command$1 run
+INFO: [help] General Commands
+	help - Show this help message
+Administrative Commands
+	set-properties- Set repository access properties
+	show-properties - Show the current repository access properties
+Variability Commands
+	add-core-asset - Add Core Asset
+	show-core-assets - Show Core Assets
+	show-instances - Show Instances of Core Asset
+	instantiate-core-asset - Instantiate Core Asset
+	show-instance-diff - Show changes in the Instances of a given Core Asset
+	show-core-diff - Show changes in the Core Asset of a given Instance
+	rebase - Mark last changes to instance as a rebase operation
+	integrate - Mark last changes to core asset as an integration operation
+08.10.2008 23:30:49 de.fhg.iese.cl.gui.Controller log
+INFO: help [null,null,null,null]
+08.10.2008 23:30:49 de.fhg.iese.cl.gui.command.Command$1 run
+INFO: [help] General Commands
+	help - Show this help message
+Administrative Commands
+	set-properties- Set repository access properties
+	show-properties - Show the current repository access properties
+Variability Commands
+	add-core-asset - Add Core Asset
+	show-core-assets - Show Core Assets
+	show-instances - Show Instances of Core Asset
+	instantiate-core-asset - Instantiate Core Asset
+	show-instance-diff - Show changes in the Instances of a given Core Asset
+	show-core-diff - Show changes in the Core Asset of a given Instance
+	rebase - Mark last changes to instance as a rebase operation
+	integrate - Mark last changes to core asset as an integration operation
+08.10.2008 23:31:03 de.fhg.iese.cl.gui.Controller setupLogging
+INFO: Logger setup
+08.10.2008 23:31:06 de.fhg.iese.cl.gui.Controller log
+INFO: help [null,null,null,null]
+08.10.2008 23:31:06 de.fhg.iese.cl.gui.command.Command$1 run
+INFO: [help] General Commands
+	help - Show this help message
+Administrative Commands
+	set-properties- Set repository access properties
+	show-properties - Show the current repository access properties
+Variability Commands
+	add-core-asset - Add Core Asset
+	show-core-assets - Show Core Assets
+	show-instances - Show Instances of Core Asset
+	instantiate-core-asset - Instantiate Core Asset
+	show-instance-diff - Show changes in the Instances of a given Core Asset
+	show-core-diff - Show changes in the Core Asset of a given Instance
+	rebase - Mark last changes to instance as a rebase operation
+	integrate - Mark last changes to core asset as an integration operation
+08.10.2008 23:31:07 de.fhg.iese.cl.gui.Controller log
+INFO: help [null,null,null,null]
+08.10.2008 23:31:07 de.fhg.iese.cl.gui.command.Command$1 run
+INFO: [help] General Commands
+	help - Show this help message
+Administrative Commands
+	set-properties- Set repository access properties
+	show-properties - Show the current repository access properties
+Variability Commands
+	add-core-asset - Add Core Asset
+	show-core-assets - Show Core Assets
+	show-instances - Show Instances of Core Asset
+	instantiate-core-asset - Instantiate Core Asset
+	show-instance-diff - Show changes in the Instances of a given Core Asset
+	show-core-diff - Show changes in the Core Asset of a given Instance
+	rebase - Mark last changes to instance as a rebase operation
+	integrate - Mark last changes to core asset as an integration operation
+08.10.2008 23:31:08 de.fhg.iese.cl.gui.Controller log
+INFO: exit [null,null,null,null]
+09.10.2008 10:54:03 de.fhg.iese.cl.gui.Controller setupLogging
+INFO: Logger setup
+09.10.2008 11:13:46 de.fhg.iese.cl.gui.Controller setupLogging
+INFO: Logger setup
+09.10.2008 11:13:57 de.fhg.iese.cl.gui.Controller log
+INFO: help [show-core-assets,null,null,null]
+09.10.2008 11:13:57 de.fhg.iese.cl.gui.command.Command$1 run
+INFO: [help] Displays a list of available core assets in the repository.
+
+show-properties [revision number] [remote path] [-d]
+
+[revision number] - indicates that only the core assets of the given repository repository revision should be listed. If left empty the latest revision will be taken
+
+[remote path] - indicates that only the core assets in the given repository path should be listed. If left empty all core assets will be listed
+
+[-d] - indicates that only directories marked as core assets should be listed
+09.10.2008 15:21:01 de.fhg.iese.cl.gui.Controller setupLogging
+INFO: Logger setup
+09.10.2008 15:21:08 de.fhg.iese.cl.gui.Controller log
+INFO: help [null,null,null,null]
+09.10.2008 15:21:08 de.fhg.iese.cl.gui.command.Command$1 run
+INFO: [help] General Commands
+	help - Show this help message
+Administrative Commands
+	set-properties- Set repository access properties
+	show-properties - Show the current repository access properties
+Variability Commands
+	add-core-asset - Add Core Asset
+	show-core-assets - Show Core Assets
+	show-instances - Show Instances of Core Asset
+	instantiate-core-asset - Instantiate Core Asset
+	show-instance-diff - Show changes in the Instances of a given Core Asset
+	show-core-diff - Show changes in the Core Asset of a given Instance
+	rebase - Mark last changes to instance as a rebase operation
+	integrate - Mark last changes to core asset as an integration operation
+09.10.2008 15:21:09 de.fhg.iese.cl.gui.Controller log
+INFO: help [null,null,null,null]
+09.10.2008 15:21:09 de.fhg.iese.cl.gui.command.Command$1 run
+INFO: [help] General Commands
+	help - Show this help message
+Administrative Commands
+	set-properties- Set repository access properties
+	show-properties - Show the current repository access properties
+Variability Commands
+	add-core-asset - Add Core Asset
+	show-core-assets - Show Core Assets
+	show-instances - Show Instances of Core Asset
+	instantiate-core-asset - Instantiate Core Asset
+	show-instance-diff - Show changes in the Instances of a given Core Asset
+	show-core-diff - Show changes in the Core Asset of a given Instance
+	rebase - Mark last changes to instance as a rebase operation
+	integrate - Mark last changes to core asset as an integration operation
+09.10.2008 15:21:10 de.fhg.iese.cl.gui.Controller log
+INFO: exit [null,null,null,null]

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="true" classpath="C:\app\eclipse\plugins\org.junit_3.8.2.v200706111738\junit.jar;C:\app\svnkit-1.1.4\svnkit.jar;C:\app\eclipse\plugins\org.eclipse.swt.win32.win32.x86_3.3.0.v3346.jar" destdir="C:\work\workspaceNEW\Projects\DNT\WP-2008\WP4 - PuLSE-I &amp; EM\CMAbstractionLayer" doctitle="Configuration Management Abstraction Layer" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="de.fhg.iese.cl.cm" source="1.6" sourcepath="../../../../../" splitindex="true" use="true" version="true"/>
+    </target>
+</project>
