@@ -6,4 +6,4 @@ Build it with maven clean install and then run from the target directory with ja
 If you are running it on another OS than MacOS you will need to change the SWT library dependency in the POM. 
 
 Apart from that you will probably have to adjust the properties.txt that contains the SVN access properties.
-The properties should point to a valid SVN repository alogn with corresponding credentials
+The properties should point to a valid SVN repository along with corresponding credentials
