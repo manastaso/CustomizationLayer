@@ -8937,3 +8937,5 @@ Variability Commands
 	show-core-diff - Show changes in the Core Asset of a given Instance
 	rebase - Mark last changes to instance as a rebase operation
 	integrate - Mark last changes to core asset as an integration operation
+Mar 23, 2017 2:24:57 PM de.fhg.iese.cl.gui.Controller setupLogging
+INFO: Logger setup

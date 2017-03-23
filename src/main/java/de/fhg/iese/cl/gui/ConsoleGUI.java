@@ -165,8 +165,8 @@ public class ConsoleGUI {
 		int y = bounds.y + (bounds.height - rect.height) / 2;
 		sShell.setLocation (x, y);
 		
-		InputStream is1 = getClass().getResourceAsStream("/icons/CLSmall.ico");
-		InputStream is2 = getClass().getResourceAsStream("/icons/CLLarge.ico");
+		InputStream is1 = ClassLoader.getSystemClassLoader().getResourceAsStream("CLSmall.ico");
+		InputStream is2 = ClassLoader.getSystemClassLoader().getResourceAsStream("CLLarge.ico");
 		dataSmall = new ImageData(is1);
 		dataLarge = new ImageData(is2);
 		
